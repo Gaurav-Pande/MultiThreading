@@ -1,6 +1,7 @@
 # MultiThreading
 Learning multithreading in a pythonic way
 
+![Image2](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/4.png)
 
 ## Notes compiled from various sources:
 
@@ -35,11 +36,7 @@ In a simple, single-core CPU, it is achieved using frequent switching between th
 
 ![Image1](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/1.png)
 
-
 * As you can see in the diagram threads share the common global varaible data.
-
-![Image2](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/4.png)
-
 
 * In a cpu of single core, threading is achieved by context switching.
 
@@ -62,8 +59,16 @@ Thread synchronization is defined as a mechanism which ensures that two or more 
 
 * Synchronization in python is done using locks(threading.lock). The mechanism behind the implementation of the locks is done using semaphores which is an object provided by the OS (in lay man terms, os assigns a value say 0 or 1 to the critical section, and if a thread wants to access this critical section thant the thread will access via this value and while exiting from the critical section it revert back the value to its original so that other thread can access it. this is similar like booking using token)
 
-*A semaphore is a synchronization object that controls access by multiple processes/threads to a common resource in a parallel programming environment. It is simply a value in a designated place in operating system (or kernel) storage that each process/thread can check and then change. Depending on the value that is found, the process/thread can use the resource or will find that it is already in use and must wait for some period before trying again. Semaphores can be binary (0 or 1) or can have additional values. Typically, a process/thread using semaphores checks the value and then, if it using the resource, changes the value to reflect this so that subsequent semaphore users will know to wait
+```
 
+A semaphore is a synchronization object that controls access by multiple processes/threads to a common resource in a parallel
+programming environment. It is simply a value in a designated place in operating system (or kernel) storage that each
+process/thread can check and then change. Depending on the value that is found, the process/thread can use the resource or
+will find that it is already in use and must wait for some period before trying again. Semaphores can be binary (0 or 1) or 
+can have additional values. Typically, a process/thread using semaphores checks the value and then, if it using the resource,
+changes the value to reflect this so that subsequent semaphore users will know to wait
+
+```
 
 
 
