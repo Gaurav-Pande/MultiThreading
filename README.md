@@ -23,7 +23,7 @@ A program can be treated as a process and all its information is stored in Proce
 * Parent process Pointer: A pointer to the Process control block (PCB) of the process that the thread lives on.
 
 
-[Image](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/2.png)
+![Image](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/2.png&raw=true)
 
 
 In a simple, single-core CPU, it is achieved using frequent switching between threads. This is termed as context switching. In context switching, the state of a thread is saved and state of another thread is loaded whenever any interrupt (due to I/O or manually set) takes place. Context switching takes place so frequently that all the threads appear to be running parallely (this is termed as multitasking).
@@ -33,7 +33,13 @@ In a simple, single-core CPU, it is achieved using frequent switching between th
 
 ### Important points to remember by
 
+![Image](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/1.png&raw=true)
+
+
 * As you can see in the diagram threads share the common global varaible data.
+
+![Image](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/4.png&raw=true)
+
 
 * In a cpu of single core, threading is achieved by context switching.
 
