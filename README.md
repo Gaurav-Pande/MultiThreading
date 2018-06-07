@@ -33,12 +33,12 @@ In a simple, single-core CPU, it is achieved using frequent switching between th
 
 ### Important points to remember by
 
-![Image](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/1.png&raw=true)
+![Image1](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/1.png&raw=true)
 
 
 * As you can see in the diagram threads share the common global varaible data.
 
-![Image](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/4.png&raw=true)
+![Image2](https://github.com/Gaurav-Pande/MultiThreading/blob/master/assets/4.png&raw=true)
 
 
 * In a cpu of single core, threading is achieved by context switching.
